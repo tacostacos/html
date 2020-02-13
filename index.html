@@ -1,23 +1,45 @@
 <!DOCTYPE html>
 <html lang="ja">
     <head>
-        <title>ウェブサイト構築日誌　いつまでたっても工事中・・・</title>
-    </head>
-
+		<title>ウェブサイト構築日誌　いつまでたっても工事中・・・</title>
+		<style>
+			html,body {
+				margin:0;
+				padding:0;
+				height:100%;
+				overflow: hidden;
+				box-sizing: border-box;
+				}
+			#left {
+				position: absolute;
+				top: 0;
+				left: 0px;
+				width: 220px;
+				height: 100%;
+				text-align: center;
+				}
+			#right{
+				position: absolute;
+				top: 0;
+				right: 0;
+				left: 220px;
+				height: 100%;
+				border-left: 2px solid #ccc;
+				}
+			iframe {
+				border: none;
+				height: 100%;
+				width: 100%;
+				}
+			</style>
+	</head>
     <body>
-        <h1>ウェブサイト構築日誌　いつまでたっても工事中・・</h1>
-        <p>まずは、GitHubと連携をとった</p>
-        <p>次に、今後の予定というか目標</p>
-        <ol>
-            <li>フォントの各種設定を知る</li>
-            <li>特殊文字（エスケープ文字）の使い方を知る</li>
-            <li>背景色の設定を知る</li>
-            <li>背景に画像を設定を知る</li>
-            <li>画像ファイルの挿入を知る</li>
-            <li>ウェブサイトのリンクの張り方を知る</li>
-            <li>実家からGitとGitHubの参考書を持ってくる</li>
-            <li>Gitの使い方を学ぶ</li>
-            <li>ブログを書く</li>
-        </ol>
+        <div id="left">
+            <iframe src="left.html" ></iframe>
+         </div>
+         <div id="right">
+            <iframe src="blog.html" ></iframe>
+         </div>
     </body>
+    
 </html>
